@@ -16,7 +16,6 @@ import android.widget.TextView;
  * to handle interaction events.
  * Use the {@link ItemDetailFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class ItemDetailFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -29,6 +28,10 @@ public class ItemDetailFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    public ItemDetailFragment() {
+        // Required empty public constructor
+    }
 
     /**
      * Use this factory method to create a new instance of
@@ -46,9 +49,6 @@ public class ItemDetailFragment extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
-    }
-    public ItemDetailFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -97,7 +97,7 @@ public class ItemDetailFragment extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
+     * <p/>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.

@@ -1,2 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+<!-- About Creating styles-v21.xml
+Right click on res folder, choose New Android resource file, set the same name for the new file "styles",
+    in Available qualifiers: choose the last item "Version" and finally set "Platform API level" 21. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
