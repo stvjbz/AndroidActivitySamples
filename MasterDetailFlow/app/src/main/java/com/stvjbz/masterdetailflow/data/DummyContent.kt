@@ -8,7 +8,7 @@ import java.util.HashMap
  */
 object DummyContent {
 
-    val ITEMS: MutableList<DummyItem> = ArrayList()
+    var ITEMS: MutableList<DummyItem> = ArrayList()
 
     val ITEM_MAP: MutableMap<String, DummyItem> = HashMap()
 
