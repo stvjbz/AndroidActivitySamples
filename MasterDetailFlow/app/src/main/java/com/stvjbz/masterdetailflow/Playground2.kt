@@ -7,6 +7,8 @@ import android.util.Pair
  */
 class Playground2 {
     fun main(args: Array<String>) {
+
+        
         var m = mutableMapOf(Pair(1, "a"))
         m.put(2, "b")
         //m.
