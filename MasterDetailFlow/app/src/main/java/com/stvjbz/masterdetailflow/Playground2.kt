@@ -8,10 +8,10 @@ import android.util.Pair
 class Playground2 {
     fun main(args: Array<String>) {
 
-        
-        var m = mutableMapOf(Pair(1, "a"))
+
+        var m = mutableMapOf<Int,String>(1 to "a")
         m.put(2, "b")
-        //m.
+        //m.put(2, "a")
 
 
         val presidents = arrayOf(Pair("John F", "K"), Pair("Ronald", "Reagan"))
@@ -63,7 +63,7 @@ class Playground2 {
         for (n in dict.entries)
             println("Key ${n.key} with value ${n.value}")
 
-        var mm: Map<Int, String> = mutableMapOf(Pair(1, "a"))
+        var mm: MutableMap<Int, String> = mutableMapOf<Int, String>(1 to "a")
         //mm.
     }
 }
